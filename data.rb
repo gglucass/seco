@@ -10,8 +10,8 @@ class Seco
   DataMapper.setup(:default, 'sqlite:data.db')
   
   def data
-    #keywords = {"Azure" => ["Azure"], "NodeJitsu" => ["NodeJitsu", '"Node Jitsu"', "Node_Jitsu"], "EngineYard" => ["EngineYard", '"Engine Yard"', "Engine_Yard"], "Cloud Foundry" => ["CloudFoundry", '"Cloud Foundry"', "Cloud_Foundry"], "DotCloud" => ["DotCloud", '"Dot Cloud"', "Dot_Cloud"], "Google App Engine" => ["GoogleAppEngine", '"Google App Engine"', '"GoogleApp Engine"', '"Google AppEngine"', "Google_App_Engine", "Google_AppEngine", "GoogleApp_Engine"], "Heroku" => ["Heroku"], "OpenShift" => ["OpenShift", '"Open Shift"', "Open_Shift"]}
-    keywords = {"OpenShift" => ["OpenShift", '"Open Shift"', "Open_Shift"]}
+    keywords = {"Azure" => ["Azure"], "NodeJitsu" => ["NodeJitsu", '"Node Jitsu"', "Node_Jitsu"], "EngineYard" => ["EngineYard", '"Engine Yard"', "Engine_Yard"], "Cloud Foundry" => ["CloudFoundry", '"Cloud Foundry"', "Cloud_Foundry"], "DotCloud" => ["DotCloud", '"Dot Cloud"', "Dot_Cloud"], "Google App Engine" => ["GoogleAppEngine", '"Google App Engine"', '"GoogleApp Engine"', '"Google AppEngine"', "Google_App_Engine", "Google_AppEngine", "GoogleApp_Engine"], "Heroku" => ["Heroku"], "OpenShift" => ["OpenShift", '"Open Shift"', "Open_Shift"]}
+    #keywords = {"OpenShift" => ["OpenShift", '"Open Shift"', "Open_Shift"]}
     
     keywords.each_key do |key|
       keywords[key].each do |keyword|
