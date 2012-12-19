@@ -3,7 +3,8 @@ class Repo
   DataMapper::Property::String.length(255)
    
    property :id,          Serial, :key => false
-   property :keynameown,     String, :key => true
+   property :keynameown,  String, :key => true, :unique => true
+   property :nameown,     String
    property :keyword,     String
    property :created,     DateTime
    property :description, String
@@ -14,8 +15,7 @@ class Repo
    property :name,        String
    property :owner,       String
    property :pushed,      DateTime
-   property :username,    String
-   property :watchers,    String
+   property :size,        Integer
   
   def perform
     self.update()
